@@ -1,0 +1,83 @@
+<!--
+    File: index.php
+
+	Author: Justin Waltenbury
+
+    Date: February 11, 2018
+    Last Modified: February 11, 2018
+
+    Purpose: Home page for the website. Basic info, and links to other pages.
+
+    Disclaimer: Structure for this page adopted from WEBD 3201 Group 24 project (J. Waltenbury, N. Gaspar, E. Forrester, D. Stewart)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="./css/website.css" /> 
+	 
+	<title>J Waltenbury</title>
+	<link rel="icon" href="./images/j_icon.jpg" type="image/gif" style ="height:16px; width:16px;"/>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1 class>
+				<a href = "./index.php"><img src="./images/j_icon.jpg" alt = "J Logo" style ="height:94px; width:101px;"/></a>
+				Justin Waltenbury
+			</h1> 
+		</div>
+		<!-- Top navigation bar -->
+		<div id="sites">
+			<ul>
+				<li><a href="./index.php">Home</a></li> <!-- Always let user access the index -->
+				<li><a href='./mode-4201.php'>MODE 4201</a></li>
+            </ul>
+		</div>
+		<div id="content-container">
+			<div id="content">
+			
+                <!-- start of main page content. -->
+                <h1>Justin's Home Page</h1>  
+    
+                <p>
+                    Welcome to Justin's website. This page was set up as part of MODE 4201 at Durham College, and will act as the staging ground for my
+                    lab submissions in this class. Currently only MODE 4201 is supported on this site, but as I develop more materials this site will
+                    be expanded to include other courses, samples, etc.
+                </p>    
+
+                <hr/>  
+
+                <p>
+                    MODE 4201 is focused on Mobile Development, and the labs revolve around developing mobile applications and research into tools and
+                    software to make that task easier. To access the content created for this course, such as lab submissions, please select the course
+                    code from the top navigation bar. This will take you to the course's page, where you can find all files that have been uploaded
+                    for that class.
+                <p>
+                
+                <hr/>  
+
+                <p> 
+                    Thank you for taking the time to visit my site. Have a great day.
+                </p>
+    
+		    </div>	<!-- Closes 'content' from header -->	
+            <div id="footer"> 
+                    &copy;2018
+                    
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                    <a href="http://validator.w3.org/check?uri=referer">
+                        <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+                    </a>
+            </div>
+        </div> <!-- Closes 'content-container'-->
+    </div> <!-- Closes 'container'-->
+
+</body>
+</html>   
