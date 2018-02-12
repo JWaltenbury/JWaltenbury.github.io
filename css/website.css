@@ -17,19 +17,19 @@ body {
 }
 
 h1 {
-    color: #544263;
+    color: #26408B;
     text-align: center;
     font-family: verdana, arial;
 }
 
 h2{
-	color: #544263;
+	color: #26408B;
 	text-align: center;
     font-family: verdana, arial;
 }
 
 h3{
-	color: #544263;
+	color: #26408B;
 	text-align: center;
     font-family: verdana, arial;
 }
@@ -37,7 +37,7 @@ h3{
 p {
     font-family: verdana, arial;
     font-size: 14px;
-    color: #544263
+    color: #26408B
 }
 
 p.normal {
