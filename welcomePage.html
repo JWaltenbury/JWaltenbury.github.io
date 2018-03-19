@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>Classwork 3</title>
+    <link rel="stylesheet" type="text/css" href="fancy_cakes.css"/>
+    <script src="submitCredentials.js" type="text/javascript"></script>   
+  </head>
+  <body>
+    <h1>Welcome Page</h1>
+
+    <h3>Justin Waltenbury<br/>
+      Classwork 3<br/>
+      <img src="dc_logo.jpg" style="height: 100px; width: 200px"/>
+    </h3>
+
+    <h2>Login Information:</h2>
+    <p class = "media" id="errorMessage">
+      Please enter your login details (Thom232, password) below:<br/>
+    </p>
+    <p class = "media">
+      User Name: <input type="text" name="userName" id="userName" value=""/><br/>
+      Password: <input type="password" name="userPassword" id="userPassword" value=""/><br/><br/>
+
+      <input type="button" value="Submit" id="submitButton" onClick="submitCredentials()" name="submitButton"/><br/><br/>
+
+      <input type="button" value="Reset" id="resetButton" onClick="resetCredentials()" name="resetButton"/><br/>
+    </p>
+  </body>
+</html>
