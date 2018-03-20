@@ -1,3 +1,14 @@
+/*
+    File: submitCredentials.js
+
+	Author: Justin Waltenbury
+
+    Date: March 18, 2018
+    Last Modified: March 18, 2018
+
+    Purpose: ICE3 functionality
+*/
+
 function submitCredentials(){
     var userName = document.getElementById("userName").value;
     var userPassword = document.getElementById("userPassword").value;
