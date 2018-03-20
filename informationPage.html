@@ -16,127 +16,166 @@
   <head>
     <title>Fancy Cakes</title>
     <script src="informationPage.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="./css/fancy_cakes.css"/>
-    <link rel="icon" href="./images/galaxy_cake.jpg" type="image/gif" style ="height:16px; width:16px;"/>
+    <link rel="stylesheet" type="text/css" href="./css/website.css"/>
+    <link rel="icon" href="./images/j_icon.jpg" type="image/gif" style ="height:16px; width:16px;"/>
   </head>
   <body>
-        <h1>Fancy Cakes</h1>
-        <p class = "intro">
-          This app is designed to demonstrate some fancy cakes I've found on the internet, including a brief explanation of what each cake is. I've also
-          included some audio and video related to the cakes. Not that this app is focused more on the design elements of the cake and less on the actual baking;
-          although I have included links to the recipes of each cake. <br/><br/>
-
-          Realistically though, this page is a demonstration for Classwork 3 in MODE 4201 to demonstrate that I can create a responsive web app. A variety of div,
-          media, and other tags have been used to give this page its current design. The topic I chose was random and had no impact on how the page was to be
-          designed.
-        </p>
-
-        <h3>
-          Justin Waltenbury<br/>
-          MODE 4201<br/>
-          fake_email@dcmail.ca<br/>
-          (905) 123-4566
-        </h3>
-
-        <div class = "table">
-          <div class = "row">
-              <div class = "header">Lego Cake</div>
-              <div class = "header">Galaxy Cake</div>
-              <div class = "header">Desert BLT</div>
-              <div class = "header">Geode Cake</div>
+      <div id="container">
+          <div id="header">
+            <h1>
+              <a href = "./index.html"><img src="./images/j_icon.jpg" alt = "J Logo" style ="height:94px; width:101px;"/></a>
+              Justin Waltenbury
+            </h1> 
           </div>
-          <div class = "row">
-              <div div class = "imagecell"><img src="./images/lego_cake.jpg"/></div>
-              <div div class = "imagecell"><img src="./images/galaxy_cake.jpg"/></div>
-              <div div class = "imagecell"><img src="./images/desert_blt.jpg"/></div>
-              <div div class = "imagecell"><img src="./images/geode_cake.jpg"/></div>
+          <!-- Top navigation bar -->
+          <div id="sites">
+            <ul>
+              <li><a href="./index.html">Home</a></li> <!-- Always let user access the index -->
+              <li><a href='./personal-details.html'>Personal Details</a></li>
+              <li><a href='./mode-4201.html'>MODE 4201</a></li>
+            </ul>
           </div>
-          <div class = "row">
-              <div div class = "cell">
-                This cake displays decorating skills more than anything and uses fondant to create the lego bricks. This cake was created for a fundraiser for kids, and
-                as such, had to have a whimsical style to it. The cake itself is a chocolate mud cake, but you could really use any type of cake for this decorating since
-                you are just adding fondant on top. <br/><br/>
+          <div id="content-container">
+            <div id="content">
+              <h1>Fancy Cakes</h1>
+              <p class = "intro">
+                This app is designed to demonstrate some fancy cakes I've found on the internet, including a brief explanation of what each cake is. I've also
+                included some audio and video related to the cakes. Not that this app is focused more on the design elements of the cake and less on the actual baking;
+                although I have included links to the recipes of each cake. <br/><br/>
 
-                Syrup is used to hold the fondant onto the cake, and the bricks themselves are made individually by moulding the fondant.
-                Assemble the lego bricks like, well, lego bricks by stacking them on top of each other. The worst part of this cake is the connector dots on top are made by
-                hand using a straw, and then added on to make it look like they are part of the brick. <br/><br/>
+                Realistically though, this page is a demonstration for Classwork 3 in MODE 4201 to demonstrate that I can create a responsive web app. A variety of div,
+                media, and other tags have been used to give this page its current design. The topic I chose was random and had no impact on how the page was to be
+                designed.
+              </p>
 
-                The lego people are not necessary, though they are a nice touch.
-                Rather than making them out of fondant, you could simply use real lego figures.</br><br/>
+              <h3>
+                Justin Waltenbury<br/>
+                MODE 4201<br/>
+                fake_email@dcmail.ca<br/>
+                (905) 123-4566
+              </h3>
 
-                <a href = "http://akitchencat.com.au/lego-cake/">Cake source</a>
+              <div class = "table">
+                <div class = "row">
+                    <div class = "header">Lego Cake</div>
+                    <div class = "header">Galaxy Cake</div>
+                    <div class = "header">Desert BLT</div>
+                    <div class = "header">Geode Cake</div>
+                </div>
+                <div class = "row">
+                    <div div class = "imagecell"><img class = "standard" src="./images/lego_cake.jpg"/></div>
+                    <div div class = "imagecell"><img class = "standard" src="./images/galaxy_cake.jpg"/></div>
+                    <div div class = "imagecell"><img class = "standard" src="./images/desert_blt.jpg"/></div>
+                    <div div class = "imagecell"><img class = "standard" src="./images/geode_cake.jpg"/></div>
+                </div>
+                <div class = "row">
+                    <div div class = "cell">
+                      This cake displays decorating skills more than anything and uses fondant to create the lego bricks. This cake was created for a fundraiser for kids, and
+                      as such, had to have a whimsical style to it. The cake itself is a chocolate mud cake, but you could really use any type of cake for this decorating since
+                      you are just adding fondant on top. <br/><br/>
+
+                      Syrup is used to hold the fondant onto the cake, and the bricks themselves are made individually by moulding the fondant.
+                      Assemble the lego bricks like, well, lego bricks by stacking them on top of each other. The worst part of this cake is the connector dots on top are made by
+                      hand using a straw, and then added on to make it look like they are part of the brick. <br/><br/>
+
+                      The lego people are not necessary, though they are a nice touch.
+                      Rather than making them out of fondant, you could simply use real lego figures.</br><br/>
+
+                      <a href = "http://akitchencat.com.au/lego-cake/">Cake source</a>
+                    </div>
+                    <div div class = "cell">
+                      This is another cake where it has more to do with decorating, and less to do with the actual cake. This type of cake is currently very popular due to its glossy
+                      finish and the potential to use unique patterns. Making a cake like this isn't particularly difficult, nor does it take a lot of time. It looks fantastic
+                      though, so this can be a go-to recipe if you want to impress your friends. <br/><br/>
+                      
+                      The cake itself is just a white layer cake, and it has butter cream and raspberry jam for flavouring. Once you have baked the cake and iced it, you are ready
+                      for the glaze part. Note that you could use other types of cakes, icing, or filling, and they would all work well. The only consideration is your cake must
+                      have smooth edges so that the glaze works properly. <br/><br/>
+                      
+                      To make the glaze, you use powdered gelatin and a simple syrup. The colour comes from food colouring, and you make the base of it dark purple and drizzle on
+                      the lighter colours to give it that starry look. It is important to pour the glaze on somewhere that the excess can be caught as it falls off the cake, as you
+                      do not want it pooling around the bottom edge. <br/><br/>
+
+                      <a href = "http://baketotheroots.de/galaxy-cake-with-mirror-glaze/">Cake source</a>
+                    </div>
+                    <div div class = "cell">
+                      This type of cake falls under the 'Dessert Imposter' category, which means that it is designed to not look like a dessert. While this one isn't really a cake,
+                      it is made up of pound cake, so it technically counts. The filling is strawberries, Nutella, and mint leaves. <br/><br/>
+
+                      First, make a pound cake by following the recipe, then slice it into pieces of 'bread' and cut up some strawberries. Using a loaf pan is obviously the best 
+                      choice here, as the cake will naturally come out in the shape of a loaf of bread. Spread on the Nutella and stack the mint and strawberries on top. That's it! <br/><br/>
+
+                      While the bread, tomato, and lettuce all work well here the issue is with the bacon. Nutella doesn't really look like bacon other than the colour, so you won't really
+                      be fooling anyone with this cake. Still, it is a fun and simple idea you could bring to any get-together! <br/><br/>
+        
+                      <a href = "https://www.willcookforsmiles.com/2012/04/dessert-blt.html">Cake source</a></div>
+                    <div div class = "cell">
+                      Finally, we have the Geode cake. This cake is designed to look like a naturally occurring rock formation, and has endless possibilities on the design you can
+                      use (since geodes come in all shapes and sizes). Similarly to the Lego cake, this cake is just a basic cake covered in fondant. This means you can use any
+                      cake you want, in any flavour. The biggest consideration is that having a taller cake allows you to have larger geode designs. <br/><br/>
+
+                      The next step after covering the cake in fondant is to cut out the section you want to use for your geode. Then, fill the hole with frosting so the rock
+                      candy has something to stick to. Add some piping gel on top of the frosting, and then start pressing the rock candy into the hole. Ideally you want darker
+                      candy towards the center of the cake to give the illusion of darkness. <br/><br/>
+
+                      There is no right or wrong way to create your geode, though using similar colours of rock candy can make things look more realistic. Remember that all geodes 
+                      are different and have fun decorating! <br/><br/>
+
+                      <a href = "https://tasty.co/recipe/geode-cake">Cake source</a>
+                    </div>
+                </div>
               </div>
-              <div div class = "cell">
-                This is another cake where it has more to do with decorating, and less to do with the actual cake. This type of cake is currently very popular due to its glossy
-                finish and the potential to use unique patterns. Making a cake like this isn't particularly difficult, nor does it take a lot of time. It looks fantastic
-                though, so this can be a go-to recipe if you want to impress your friends. <br/><br/>
-                
-                The cake itself is just a white layer cake, and it has butter cream and raspberry jam for flavouring. Once you have baked the cake and iced it, you are ready
-                for the glaze part. Note that you could use other types of cakes, icing, or filling, and they would all work well. The only consideration is your cake must
-                have smooth edges so that the glaze works properly. <br/><br/>
-                
-                To make the glaze, you use powdered gelatin and a simple syrup. The colour comes from food colouring, and you make the base of it dark purple and drizzle on
-                the lighter colours to give it that starry look. It is important to pour the glaze on somewhere that the excess can be caught as it falls off the cake, as you
-                do not want it pooling around the bottom edge. <br/><br/>
 
-                <a href = "http://baketotheroots.de/galaxy-cake-with-mirror-glaze/">Cake source</a>
-              </div>
-              <div div class = "cell">
-                This type of cake falls under the 'Dessert Imposter' category, which means that it is designed to not look like a dessert. While this one isn't really a cake,
-                it is made up of pound cake, so it technically counts. The filling is strawberries, Nutella, and mint leaves. <br/><br/>
+              <p class = "media">
+                Here's a good song to play when you give someone your cake:<br/>
+                <audio controls>
+                  <source src="./images/happy_birthday.mp3" type = "audio/mpeg">
+                    Your browser does not support the audio tag
+                </audio>
+              </p>
+              <p class = "media">
+                  This video demonstrates the correct way to glaze a mirror glaze cake, like the Galaxy Cake:<br/>
+                  <video width = "420px" height = "250px" controls>
+                    <source src="./images/cake_glaze.mp4" type = "video/mp4">
+                    Your browser does not support the video tag
+                  </video>
+              </p>
+              <p class = "media">
+                  Here's a video lesson on making a Galaxy Cake:<br/>
+                  <iframe width="420" height="315" src="https://www.youtube.com/embed/pZhV63pkDBw"> <!-- Size from: https://www.w3schools.com/html/html_youtube.asp -->
+                    Your browser does not support the iframe tag
+                  </iframe>
+              </p>
 
-                First, make a pound cake by following the recipe, then slice it into pieces of 'bread' and cut up some strawberries. Using a loaf pan is obviously the best 
-                choice here, as the cake will naturally come out in the shape of a loaf of bread. Spread on the Nutella and stack the mint and strawberries on top. That's it! <br/><br/>
+              <p class = "media">
+                Copyright: Justin Waltenbury 2018&copy;<br/>
+                <a href = "https://www.facebook.com/">Facebook</a>
+                <a href = "https://twitter.com/">Twitter</a>
+                <a href = "https://www.instagram.com/">Instagram</a>
+                <a href = "https://www.linkedin.com/">LinkedIn</a>
+                <a href = "https://www.youtube.com/">YouTube</a>
+              </p>
 
-                While the bread, tomato, and lettuce all work well here the issue is with the bacon. Nutella doesn't really look like bacon other than the colour, so you won't really
-                be fooling anyone with this cake. Still, it is a fun and simple idea you could bring to any get-together! <br/><br/>
-  
-                <a href = "https://www.willcookforsmiles.com/2012/04/dessert-blt.html">Cake source</a></div>
-              <div div class = "cell">
-                Finally, we have the Geode cake. This cake is designed to look like a naturally occurring rock formation, and has endless possibilities on the design you can
-                use (since geodes come in all shapes and sizes). Similarly to the Lego cake, this cake is just a basic cake covered in fondant. This means you can use any
-                cake you want, in any flavour. The biggest consideration is that having a taller cake allows you to have larger geode designs. <br/><br/>
+              <hr/>
 
-                The next step after covering the cake in fondant is to cut out the section you want to use for your geode. Then, fill the hole with frosting so the rock
-                candy has something to stick to. Add some piping gel on top of the frosting, and then start pressing the rock candy into the hole. Ideally you want darker
-                candy towards the center of the cake to give the illusion of darkness. <br/><br/>
+              <p> 
+                  To return to the main MODE 4201 hub, click <a href="./mode-4201.html">here</a> or click 'MODE 4201' in the main navigation bar.<br/>
+                  To return to the MODE 4201 Classworks hub, click <a href="./classworks.html">here</a>.<br/>
+                  To return Home, simply click 'Home' in the main navigation bar.
+              </p>
 
-                There is no right or wrong way to create your geode, though using similar colours of rock candy can make things look more realistic. Remember that all geodes 
-                are different and have fun decorating! <br/><br/>
-
-                <a href = "https://tasty.co/recipe/geode-cake">Cake source</a>
-              </div>
-          </div>
-        </div>
-
-        <p class = "media">
-          Here's a good song to play when you give someone your cake:<br/>
-          <audio controls>
-            <source src="happy_birthday.mp3" type = "audio/mpeg">
-              Your browser does not support the audio tag
-          </audio>
-        </p>
-        <p class = "media">
-            This video demonstrates the correct way to glaze a mirror glaze cake, like the Galaxy Cake:<br/>
-            <video width = "420px" height = "250px" controls>
-              <source src="cake_glaze.mp4" type = "video/mp4">
-              Your browser does not support the video tag
-            </video>
-        </p>
-        <p class = "media">
-            Here's a video lesson on making a Galaxy Cake:<br/>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/pZhV63pkDBw"> <!-- Size from: https://www.w3schools.com/html/html_youtube.asp -->
-              Your browser does not support the iframe tag
-            </iframe>
-        </p>
-
-        <p class = "media">
-          Copyright: Justin Waltenbury 2018&copy;<br/>
-          <a href = "https://www.facebook.com/">Facebook</a>
-          <a href = "https://twitter.com/">Twitter</a>
-          <a href = "https://www.instagram.com/">Instagram</a>
-          <a href = "https://www.linkedin.com/">linkedIn</a>
-          <a href = "https://www.youtube.com/">YouTube</a>
-        </p>
+            </div>	<!-- Closes 'content' from header -->	
+            <div id="footer"> 
+                    &copy;2018
+                    
+                    <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                    <a href="http://validator.w3.org/#validate_by_input">
+                        <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+                    </a>
+            </div>
+        </div> <!-- Closes 'content-container'-->
+    </div> <!-- Closes 'container'-->
   </body>
 </html>
