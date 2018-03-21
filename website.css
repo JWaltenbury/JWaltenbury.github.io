@@ -84,8 +84,8 @@ td{
 }
 
 img.standard{
-    height: 250px;;
-    width: 250px;
+    max-height: 250px;;
+    max-width: 250px;
 }
 
 /*
@@ -95,7 +95,8 @@ div.table{
     display: table;
     border: 1px solid black;
     max-width: 75%;
-    margin: auto;
+	margin: auto;
+	overflow-x: auto;
 }
 
 div.row{
@@ -121,6 +122,13 @@ div.imagecell{
     display: table-cell;
     border: 1px solid black;
     text-align: center;
+}
+
+@media (max-width:768px) {
+    div.table {
+        display: block;
+		margin: auto;
+    }
 }
 
 /*
