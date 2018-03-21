@@ -124,12 +124,6 @@ div.imagecell{
     text-align: center;
 }
 
-@media (max-width:768px) {
-    div.table {
-        display: block;
-		margin: auto;
-    }
-}
 
 /*
 The layout for the rest of this css is a modified version from:
