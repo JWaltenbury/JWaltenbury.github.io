@@ -56,6 +56,7 @@ p.intro{
 
 p.media{
     text-align: center;
+    max-width: 75%;
 }
 
 th{
@@ -124,6 +125,12 @@ div.imagecell{
     text-align: center;
 }
 
+@media (max-width:768px) {
+    div.table {
+        display: block;
+		margin: auto;
+    }
+}
 
 /*
 The layout for the rest of this css is a modified version from:
