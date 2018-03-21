@@ -84,7 +84,7 @@ td{
 }
 
 img.standard{
-    height: 250px;
+    height: 250px;;
     width: 250px;
 }
 
@@ -94,13 +94,14 @@ img.standard{
 div.table{
     display: table;
     border: 1px solid black;
-    width: 75%;
-    margin: auto;
+    max-width: 75%;
+	margin: auto;
+	overflow-x: auto;
 }
 
 div.row{
     display: table-row;
-    border: 1px solid black;
+	border: 1px solid black;	
 }
 
 div.header{
@@ -123,6 +124,13 @@ div.imagecell{
     text-align: center;
 }
 
+@media (max-width:768px) {
+    div.table {
+        display: block;
+		margin: auto;
+    }
+}
+
 /*
 The layout for the rest of this css is a modified version from:
 http://www.maxdesign.com.au/articles/process/
@@ -130,7 +138,7 @@ http://www.maxdesign.com.au/articles/process/
 #container
 {
 	margin: 0 auto;
-	width: 1200px;
+	width: 100%;
 	background: #fff;
 }
 
@@ -142,19 +150,19 @@ http://www.maxdesign.com.au/articles/process/
 
 #header h1
  { 
-			margin: 0;
-			display: inline;
+	margin: 0;
+	display: inline;
 }
 #header img
  { 
-			vertical-align: middle;
-			width: 150px;
+	vertical-align: middle;
+	max-width: 150px;
 }
 
 #sites
 {
 	float: left;
-	width: 1200px;
+	width: 100%;
 	background: #000;
 }
 
@@ -181,8 +189,8 @@ http://www.maxdesign.com.au/articles/process/
 }
 
 #sites li a:hover { 
-				background-color: #ccc; 
-				color: #000;
+	background-color: #ccc; 
+	color: #000;
 }
 
 #navigation
@@ -198,7 +206,7 @@ http://www.maxdesign.com.au/articles/process/
 #content-container
 {
 	float: left;
-	width: 1200px;
+	width: 100%;
 	background-color: #fff;
 	background-image: url(../images/styles/background.png);
 	/* go up a directory, and then work down into images/styles directory */
