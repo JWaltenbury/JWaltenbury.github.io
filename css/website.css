@@ -99,6 +99,11 @@ header{
 	background: #ffffffbd;
 }
 
+form{
+	width: 300px;
+    margin: 0 auto;
+}
+
 div.topic{
     float: left;
 	padding: 15px;
