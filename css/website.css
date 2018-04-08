@@ -93,6 +93,12 @@ img.standard{
 	margin: auto;
 }
 
+header{
+	font-size: 20px;
+	font-weight: bold;
+	background: #ffffffbd;
+}
+
 div.topic{
     float: left;
 	padding: 15px;
