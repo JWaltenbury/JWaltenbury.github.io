@@ -45,3 +45,30 @@ function resetCredentials(){
     document.getElementById("userName").value = "";
     document.getElementById("userPassword").value = "";  
 }
+
+//Outputs the footer for the website, including counters and media links
+function footer()
+{
+  Counter()
+  document.write("<footer>");
+  document.write("Justin Waltenbury. April 8 2018&copy; You have visited this website "+ localStorage.count +" time(s).<br/>");
+  document.write("<a href='https://www.facebook.com'>Facebook.com</a>&nbsp;&nbsp;&nbsp;&nbsp;");
+  document.write("<a href='https://www.twitter.com'>Twitter.com</a>&nbsp;&nbsp;&nbsp;&nbsp;");
+  document.write("<a href='https://www.instagram.com'>Instagram.com</a>&nbsp;&nbsp;&nbsp;&nbsp;");
+  document.write("<a href='https://www.linkedin.com'>LinkedIn.com</a>&nbsp;&nbsp;&nbsp;&nbsp;");
+  document.write("<a href='https://www.youtube.com'>YouTube.com</a>");
+  document.write("</footer><br/>");
+}
+
+//Used to determine the number of times a page has been viewed (Adopted from group)
+function Counter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.count) {
+            localStorage.count = Number(localStorage.count)+1;
+        } else {
+            localStorage.count = 1;
+        }
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
