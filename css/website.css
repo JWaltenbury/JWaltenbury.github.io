@@ -119,7 +119,7 @@ div.topiccontainer{
 }
 @media screen and (max-width: 600px) {
 	div.topiccontainer{
-		height: 3250px;
+		height: 4000px;
 	}
 }
 
