@@ -77,6 +77,7 @@ a:active{
 
 ul{
 	list-style-type: square;
+	color: #20C20E;
 }
 ol{
 	list-style-type: upper-roman;
@@ -104,7 +105,9 @@ header{
 
 form{
 	width: 300px;
-    margin: 0 auto;
+	margin: 0 auto;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 div.topic{
