@@ -105,9 +105,9 @@ header{
 
 form{
 	width: 300px;
-	margin: 0 auto;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	display: block;
 }
 
 div.topic{
