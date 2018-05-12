@@ -13,23 +13,23 @@
 
 
 body {
-    background-color: #4b0082;
+    background-color: #20C20E;
 }
 
 h1 {
-    color: #26408B;
+    color: #20C20E;
     text-align: center;
     font-family: verdana, arial;
 }
 
 h2{
-	color: #26408B;
+	color: #20C20E;
 	text-align: center;
     font-family: verdana, arial;
 }
 
 h3{
-	color: #26408B;
+	color: #20C20E;
 	text-align: center;
     font-family: verdana, arial;
 }
@@ -37,7 +37,7 @@ h3{
 p {
     font-family: verdana, arial;
     font-size: 14px;
-    color: #000
+    color: #20C20E
 }
 
 p.normal {
@@ -163,12 +163,12 @@ http://www.maxdesign.com.au/articles/process/
 {
 	margin: 0 auto;
 	width: 100%;
-	background: #fff;
+	background: #000000;
 }
 
 #header
 {
-	background: #fff;
+	background: #000000;
 	padding: 20px;
 }
 
