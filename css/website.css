@@ -265,3 +265,10 @@ http://www.maxdesign.com.au/articles/process/
 #footer img{
 	vertical-align: middle;
 }
+
+#centerbuttons{
+   width:250px; 
+   margin:0 auto;
+}
+
+.buttonHolder{ text-align: center; }
