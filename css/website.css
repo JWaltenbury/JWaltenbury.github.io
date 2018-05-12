@@ -81,6 +81,9 @@ ul{
 ol{
 	list-style-type: upper-roman;
 }
+li{
+	color: #20C20E;
+}
 
 td{
 	font-family: verdana, arial;
@@ -214,7 +217,7 @@ http://www.maxdesign.com.au/articles/process/
 
 #sites li a:hover { 
 	background-color: #ccc; 
-	color: #000000;
+	color: #20C20E;
 }
 
 #navigation
