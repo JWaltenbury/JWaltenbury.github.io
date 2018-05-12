@@ -104,9 +104,8 @@ header{
 }
 
 form{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+	margin: 0 auto; 
+	width:250px;
 }
 
 div.topic{
