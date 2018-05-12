@@ -19,7 +19,7 @@ function submitCredentials1(){
     }  
     else
     {
-        displayString = "InvalidPassword! Don't overthink it... it's a bad 'password'<br/><img src='./images/error.png' alt = 'error' style ='height:94px; width:101px;'/>";
+        displayString = "InvalidPassword! Don't overthink it... it's a bad 'password'<br/><img src='./images/error.jpg' alt = 'error' style ='height:94px; width:101px;'/>";
         document.getElementById("errorMessage").innerHTML = displayString; 
     }   
 }
