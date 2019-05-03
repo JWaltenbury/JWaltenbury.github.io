@@ -2,7 +2,8 @@
 <!--
   Author:       Justin Waltenbury
   Created:      August 6, 2018
-  Modified:     August 6, 2018
+  Modified:     May 2, 2019
+  Latest:       Added some libraries, resolved vulnerabilities
   Purpose:      Main website
   Attribution:  Style and layout adopted/modified from https://startbootstrap.com/template-overviews/resume/ by Start Bootstrap
 -->
@@ -11,17 +12,15 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>Welcome!</title>
     <link rel="icon" href="img/icon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap, jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -33,6 +32,8 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
+    <!-- Fancy libraries -->
+    <script src="js/functions.js"></script>
   </head>
 
   <body id="page-top">
@@ -79,7 +80,7 @@
           <h1 class="mb-0">Justin
             <span class="text-primary">Waltenbury</span>
           </h1>
-          <div class="subheading mb-5">Oshawa · Ontario · <a href="mailto:j.waltenbury@hotmail.com">Email me!</a>
+          <div class="subheading mb-5">Oshawa · Ontario · <a class="mailtoui" href="mailto:j.waltenbury@hotmail.com">Email Me!</a>
           </div>
           <p class="mb-5">
               Having experience in a variety of industries, I have had the opportunity to discover my passion for Information Technology and creating useful applications from nothing. My past experiences have cultivated my ability to analyze problems and come up with a viable solution in an independent and efficient manner.<br/><br/>
@@ -427,7 +428,6 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -435,7 +435,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.1/dist/mailtoui-min.js"></script>
   </body>
 
 </html>
