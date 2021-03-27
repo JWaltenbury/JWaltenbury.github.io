@@ -2,8 +2,8 @@
 <!--
   Author:       Justin Waltenbury
   Created:      August 6, 2018
-  Modified:     May 2, 2019
-  Latest:       Added some libraries, resolved vulnerabilities
+  Modified:     March 26, 2021
+  Latest:       Updated content
   Purpose:      Main website
   Attribution:  Style and layout adopted/modified from https://startbootstrap.com/template-overviews/resume/ by Start Bootstrap
 -->
@@ -61,13 +61,16 @@
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#media">Media</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#samples">Samples</a>
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
         </ul>
       </div>
@@ -80,7 +83,7 @@
           <h1 class="mb-0">Justin
             <span class="text-primary">Waltenbury</span>
           </h1>
-          <div class="subheading mb-5">Oshawa · Ontario · <a class="mailtoui" href="mailto:j.waltenbury@hotmail.com">Email Me!</a>
+          <div class="subheading mb-5">Courtice · Ontario · <a class="mailtoui" href="mailto:j.waltenbury@hotmail.com">Email Me!</a>
           </div>
           <p class="mb-5">
               Having experience in a variety of industries, I have had the opportunity to discover my passion for Information Technology and creating useful applications from nothing. My past experiences have cultivated my ability to analyze problems and come up with a viable solution in an independent and efficient manner.<br/><br/>
@@ -118,6 +121,30 @@
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
+          <!-- Precise -->
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Junior Software Engineer</h3>
+              <div class="subheading mb-3"><a href="https://www.preciseparklink.com/">Precise ParkLink</a></div>
+              <ul>
+                <li>
+                    Independently developed a web-based interactive Virtual Parking Assistant application based in ASP.net and SQL Server. Full-stack development including requirements gathering and design, responsive UI, application hosting, and database design
+                </li>
+                <li>
+                    Developed a python-based NLP chatbot using TFLearn. Co-developed a Flask-based API to manage predictions and responses of the AI model. Speech input and output implemented using Google Cloud services
+                </li>
+                <li>
+                    Created and implemented a mobile parking payment solution, including web-based user management portal using the ASP.net Core MVC framework. Included development of both iOS and Android mobile applications                </li>
+                <li>
+                    Co-managed a research partnership with Durham College as the primary contact. Helped set project timelines and scope, provided guidance to students, and prepared for implementation of the final products. Organized opportunities for Precise ParkLink to participate in several marketing events due to our collaboration                </li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Sept 2018 - Present</span>
+            </div>
+          </div>
+
+
           <!-- AI RA -->
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -139,7 +166,7 @@
               </ul>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">Jan 2018 - Present</span>
+              <span class="text-primary">Jan 2018 - Aug 2018</span>
             </div>
           </div>
 
@@ -382,13 +409,135 @@
         </div>
       </section>
 
-      <!-- Interests -->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <!-- Projects -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Placeholder.</p>
+          <h2 class="mb-5">Major Projects</h2>
+          <div style="max-width: 75%; margin-left:auto; margin-right: auto; text-align: center;">
+            <!-- Slideshow container -->
+            <div class="mySlides">
+              <img src="img/kiosk.jpg" style="max-width: 50%;"><br/>
+              <div class="subheading mb-3"><a href="https://www.preciseparklink.com/ps-virtual-parking-assistant">Virtual Parking Assistant</a></div>
+              <div class="subheading mb-3">Contributions</div>
+                <li>
+                    AI chatbot development and implementation (Recurrent neural network, Flask API, Google Cloud services)
+                </li>
+                <li>
+                    Full web application including user interface and controllers (ASP.NET Web Page)
+                </li>
+                <li>
+                    Intent classification and training data (JSON, Jupyter notebooks)
+                </li>
+                <li>
+                    Integration with live human assistance when required (SignalR)
+                </li>
+                <li>
+                    Database design and creation (SQL, SSMS)
+                </li>
+                <li>
+                    Reports on usage metrics, heat maps, chatbot accuracy (SQL stored procedures and views)
+                </li>
+                <li>
+                  Hosting, version control, release management
+                </li>
+                <br/>
+            </div>
+            <div class="mySlides">
+              <img src="img/parkedin.PNG" style="max-width: 50%;"><br/>
+              <div class="subheading mb-3"><a href="https://parkedin.com/">Parkedin</a></div>
+              <div class="subheading mb-3">Contributions</div>
+                <li>
+                    Full front-end implementation using provided design mock-ups (Views - Razor pages)
+                </li>
+                <li>
+                    Application logic (Controllers - ASP.NET Core MVC)
+                </li>
+                <li>
+                    Build settings and configuration (Release vs dev vs QA)
+                </li>
+                <li>
+                    Implementation of business logic through shared codebase
+                </li>
+                <li>
+                    Hosting, version control, release management
+                </li>
+                <br/>
+            </div>
+            <div class="mySlides">
+              <img src="img/android.PNG" style="max-width: 50%;"><br/>
+              <div class="subheading mb-3"><a href="https://play.google.com/store/apps/details?id=com.preciseparklink.parkedin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Parkedin - Android App</a></div>
+              <div class="subheading mb-3">Contributions</div>
+                <li>
+                    Fragment layouts for UI (XML)
+                </li>
+                <li>
+                    Fragment and activity application logic (Java)
+                </li>
+                <li>
+                    Implemented services as needed for feature implementation (Firebase, Google maps, etc.)
+                </li>
+                <li>
+                    Implementation of business logic through REST API (Java, JSON)
+                </li>
+                <li>
+                    Hosting, version control, release management
+                </li>
+                <li>
+                    Management of store presence on Google Play
+                </li>
+                <br/>
+            </div>
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+
         </div>
       </section>
+
+      <!-- Media -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="media">
+        <div class="my-auto">
+          <h2 class="mb-5">Media Releases</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://durhamcollege.ca/new-notable/focus-on-innovation/dc-hosts-eighth-annual-research-day">Durham College Research Day - 3MARC Winner</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://twitter.com/CollegesOntario/status/1112734778426564609">Queen's Park College Day - AI Voice Assistant</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://durhamcollege.ca/wp-content/uploads/research-day-2019-program-FINAL.pdf">Durham College Research Day - "Smart parking management system using AI" Panel</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://www.youtube.com/watch?v=H1ILadK0FYE&ab_channel=PreciseParkLinkInc.">Precise ParkLink Virtual Tour - Virtual Parking Assistant</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://www.youtube.com/watch?v=OrxUwjPz3bg&ab_channel=PreciseParkLinkInc.">Precise ParkLink - 2019 Highlights (Virtual Parking Assistant)</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://www.youtube.com/watch?v=J8r4qYMxEc4&ab_channel=PreciseParkLinkInc.">Precise ParkLink - Industry Partners: Precise ParkLink and Durham College</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://www.preciseparklink.com/newclient-case-studies/durham-college-ai-kiosk">Precise ParkLink - Durham College AI Kiosk Case Study</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://www.youtube.com/watch?v=QbRS2XGOCJM&ab_channel=PreciseParkLinkInc.">Precise ParkLink - 2020 Highlights (Parkedin)</a>
+            </li>
+            <li>
+              <i class="fa-li fa fa-camera text-warning"></i>
+              <a href="https://www.youtube.com/watch?v=ohnw8PzpMBg&ab_channel=PreciseParkLinkInc.">Precise ParkLink - Parkedin Mobile Access Control</a>
+            </li>
+          </ul>
+        </div>
+      </section>  
 
       <!-- Awards -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
@@ -417,14 +566,42 @@
         </div>
       </section>
 
-      <!-- Samples -->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="samples">
+      <!-- Interests -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Samples</h2>
-          <p>Placeholder.</p>
+          <h2 class="mb-5">Interests and Hobbies</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-headphones text-warning"></i>
+              Volleyball
+            </li>
+            <li>
+              <i class="fa-li fa fa-headphones text-warning"></i>
+              Video games
+            </li>
+            <li>
+              <i class="fa-li fa fa-headphones text-warning"></i>
+              Camping
+            </li>
+            <li>
+              <i class="fa-li fa fa-headphones text-warning"></i>
+              Socializing
+            </li>
+            <li>
+              <i class="fa-li fa fa-headphones text-warning"></i>
+              Home Renovations
+            </li>
+            <li>
+              <i class="fa-li fa fa-headphones text-warning"></i>
+              Lego
+            </li>
+            <li>
+              <i class="fa-li fa fa-headphones text-warning"></i>
+              Learning random useless facts
+            </li>
+          </ul>
         </div>
       </section>
-
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -436,6 +613,40 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.1/dist/mailtoui-min.js"></script>
+
+    <!-- Slideshow -->
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      //carousel();
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 30000); // Change image every 30 seconds
+      }
+    </script>
   </body>
 
 </html>
