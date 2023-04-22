@@ -1,0 +1,103 @@
+
+<!--
+  Author:       Justin Waltenbury
+  Created:      August 6, 2018
+  Modified:     March 26, 2021
+  Latest:       Updated content
+  Purpose:      Main website
+  Attribution:  Style and layout adopted/modified from https://startbootstrap.com/template-overviews/resume/ by Start Bootstrap
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Welcome!</title>
+    <link rel="icon" href="img/icon.ico">
+
+    <!-- Bootstrap, jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+    <!-- Fancy libraries -->
+    <script src="js/functions.js"></script>
+  </head>
+
+  <body id="page-top">
+
+    <div class="container-fluid p-0">
+      <!-- About Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Explorer's
+            <span class="text-primary">Expedition</span>
+          </h1> 
+          <p class="mb-5">
+            Oh! We understand now! We will send a team out at once to research the location!
+          </p>
+          <div>
+              <b>Artifact 4:</b>
+              <p>
+                One thing the eternals were known for was their dedication to supporting the community around them - especially when it came to their local tavern! Despite a global pandemic this dynamic duo made the painful sacrifice
+                of eating food in their pajamas in the comfort of their own home. The eternals have been such a boon for the tavern that they even helped them survive the great pickle famine that devastated many eateries in the area.
+The eternals are truly dedicated to their closest companions and regularly bring them to their local tavern in preparation for future adventures. While the tavern itself hasn't been of any significant note - the role it has
+                played as a safe haven during many other experiences and tribulations makes it a place we'd like to study further. <br/><br/>
+
+                What we want to figure out is how the tavern has survived this long. We know the eternals supported it through a pandemic and pickle famine, but there are numerous records of bird swarms in that era. Somehow this
+                tavern has kept these birds away - it's almost like there are stalwart guardians protecting it! If you were to keep all the birds away, I wonder how many guardians it would take...
+              </p><br/><br/>
+              <form id="frm1" action="/action_page.php">
+                Answer: <input type="text" name="answer" id="answer"><br/><br/><br/>
+                <input type="button" onclick="myFunction()" value="Submit" class="text-primary">
+              </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.1/dist/mailtoui-min.js"></script>
+
+    <!-- Slideshow -->
+    <script>
+      function myFunction() {
+
+          var answer = document.getElementById("answer").value;
+
+          if(answer.toLowerCase() == "2" || answer.toLowerCase() == "two" || answer.toLowerCase() == "two owls" ) {
+              window.location.href = 'clue5.html';
+          }
+          else
+          {
+              window.alert("Whoops! That doesn't seem right!");
+          }
+          
+      }
+
+      document.getElementById("frm1").addEventListener("submit", (e) => {
+          e.preventDefault();
+          myFunction()
+          });
+  </script>
+  </body>
+
+</html>

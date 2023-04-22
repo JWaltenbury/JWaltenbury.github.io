@@ -1,0 +1,102 @@
+
+<!--
+  Author:       Justin Waltenbury
+  Created:      August 6, 2018
+  Modified:     March 26, 2021
+  Latest:       Updated content
+  Purpose:      Main website
+  Attribution:  Style and layout adopted/modified from https://startbootstrap.com/template-overviews/resume/ by Start Bootstrap
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Welcome!</title>
+    <link rel="icon" href="img/icon.ico">
+
+    <!-- Bootstrap, jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+    <!-- Fancy libraries -->
+    <script src="js/functions.js"></script>
+  </head>
+
+  <body id="page-top">
+
+    <div class="container-fluid p-0">
+      <!-- About Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Explorer's
+            <span class="text-primary">Expedition</span>
+          </h1> 
+          <p class="mb-5">
+            Now that was a high speed maneuver!
+          </p>
+          <div>
+              <b>Artifact 7:</b>
+              <p>
+                A royal feast! Not with knights and swords, but with meat and potatoes! The eternals had a tradition where they would go out yearly to celebrate spending another year in the company of each other. It is rather unfortunate 
+                that these feasts are such an expense to prepare - imagine a world where one could feast like this regularly. It's possible that our novice explorer mixed up some of the records, but we've also found tell of a musician 
+                that the eternals both enjoyed. From what we can tell he was a solo entertainer that had the skills and charisma to entertain entire stadiums of people!<br/><br/>
+
+                Somehow, the yearly feast and the musician have collided. We're not sure if it's true or if our records are wrong - we need you to investigate! The musician released many mathematically themed compilations of songs, and 
+                it appears the host of the feast advocates for one of them. Can you figure out which album it is?
+              </p><br/><br/>
+              <form id="frm1" action="/action_page.php">
+                Answer: <input type="text" name="answer" id="answer"><br/><br/><br/>
+                <input type="button" onclick="myFunction()" value="Submit" class="text-primary">
+              </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.1/dist/mailtoui-min.js"></script>
+
+    <!-- Slideshow -->
+    <script>
+      function myFunction() {
+
+          var answer = document.getElementById("answer").value;
+
+          if(answer.toLowerCase() == "plus" || answer.toLowerCase() == "+" || answer.toLowerCase() == "and") {
+              window.location.href = 'clue8.html';
+          }
+          else
+          {
+              window.alert("Whoops! That doesn't seem right!");
+          }
+          
+      }
+
+      document.getElementById("frm1").addEventListener("submit", (e) => {
+          e.preventDefault();
+          myFunction()
+          });
+  </script>
+  </body>
+
+</html>

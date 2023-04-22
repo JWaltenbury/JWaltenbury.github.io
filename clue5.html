@@ -1,0 +1,104 @@
+
+<!--
+  Author:       Justin Waltenbury
+  Created:      August 6, 2018
+  Modified:     March 26, 2021
+  Latest:       Updated content
+  Purpose:      Main website
+  Attribution:  Style and layout adopted/modified from https://startbootstrap.com/template-overviews/resume/ by Start Bootstrap
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Welcome!</title>
+    <link rel="icon" href="img/icon.ico">
+
+    <!-- Bootstrap, jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+    <!-- Fancy libraries -->
+    <script src="js/functions.js"></script>
+  </head>
+
+  <body id="page-top">
+
+    <div class="container-fluid p-0">
+      <!-- About Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Explorer's
+            <span class="text-primary">Expedition</span>
+          </h1> 
+          <p class="mb-5">
+            Of course! The owls!
+          </p>
+          <div>
+              <b>Artifact 5:</b>
+              <p>
+                Throughout all of the historical documents we've found there's one common thread - their society embraced animal companions as if they were members of their own family. The eternals we're no exception to this, and it
+                appears they have also had a significant number of companions in their time together. Two in particular stand out - the bonds they shared with these animals appear to have truly left an impact on their lives. While the 
+                first companion appears to have passed away at some point in history - the records show he was loved dearly and the eternals showered him with love and affection for their all too brief time together. It left a large hole
+                in their hearts, but they were able to mend those wounds and give that love to another companion. However, we aren't really sure what kind of animal the new companion is as he doesn't match the description of other
+                creatures within his species. What a puzzling discovery!<br/><br/>
+
+                Maybe we should investigate where the new companion was obtained? Before he joined the eternal's family he was kept in a local business as a performer for the customers. After the eternal's met him they were smitten
+                by his charm and energy - despite his poor attitude and frequency to lash out when upset. The records show that the store had a slogan displayed proudly on a banner outside - but alas, it has been lost to time. What is that slogan?!
+              </p><br/><br/>
+              <form id="frm1" action="/action_page.php">
+                Answer: <input type="text" name="answer" id="answer"><br/><br/><br/>
+                <input type="button" onclick="myFunction()" value="Submit" class="text-primary">
+              </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.1/dist/mailtoui-min.js"></script>
+
+    <!-- Slideshow -->
+    <script>
+      function myFunction() {
+
+          var answer = document.getElementById("answer").value;
+
+          if(answer.toLowerCase() == "your pet your store" || answer.toLowerCase() == "your pet, your store" || answer.toLowerCase() == "yourpetyourstore" || answer.toLowerCase() == "your pet . your store" ) {
+              window.location.href = 'clue6.html';
+          }
+          else
+          {
+              window.alert("Whoops! That doesn't seem right!");
+          }
+          
+      }
+
+      document.getElementById("frm1").addEventListener("submit", (e) => {
+          e.preventDefault();
+          myFunction()
+          });
+  </script>
+  </body>
+
+</html>

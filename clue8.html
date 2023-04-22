@@ -1,0 +1,104 @@
+
+<!--
+  Author:       Justin Waltenbury
+  Created:      August 6, 2018
+  Modified:     March 26, 2021
+  Latest:       Updated content
+  Purpose:      Main website
+  Attribution:  Style and layout adopted/modified from https://startbootstrap.com/template-overviews/resume/ by Start Bootstrap
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Welcome!</title>
+    <link rel="icon" href="img/icon.ico">
+
+    <!-- Bootstrap, jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+    <!-- Fancy libraries -->
+    <script src="js/functions.js"></script>
+  </head>
+
+  <body id="page-top">
+
+    <div class="container-fluid p-0">
+      <!-- About Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Explorer's
+            <span class="text-primary">Expedition</span>
+          </h1> 
+          <p class="mb-5">
+            Yeah, so, our files were definitely mixed up... oops.
+          </p>
+          <div>
+              <b>Artifact 8:</b>
+              <p>
+                I'm exhausted! All this travelling has really taken a toll, and I'm not even the one solving the clues! The next artifact I've picked out is a lot closer to home - it's near another park. Sheesh, these eternals sure did 
+                do a lot of stuff at parks. It's kind of weird how into activities and sports they were! The records we've got on the next artifact talk about some long lost object called a "baseball". It's mentioned as a stand-alone 
+                sport, but also combined with something called "soccer" to make a hybrid. What a strange society! There's even records indicating a horrifying accident where one of the eternals struck the other with a ball and gave
+                them stiches on their leg! Wait... <b>on</b> their leg? Stiches go <b>in</b> the skin don't they? Maybe the documents are wrong...<br/><br/>
+
+                I'm sick of looking at parks, so this time let's get data on something else. There's a building near that park that appears to operate in a similar manner of one of the eternal's professions. It's a place where the adults of
+                society banished the children throughout the week and left them to fend for themselves. From what we've heard these places turn into something akin the wild west - a lawless world where the children seem to turn feral.
+                The thought of going anywhere near a containment facility like this terrifies me - so all I need is the street number for the building. I'll send out a braver crew than myself later to explore!
+              </p><br/><br/>
+              <form id="frm1" action="/action_page.php">
+                Answer: <input type="text" name="answer" id="answer"><br/><br/><br/>
+                <input type="button" onclick="myFunction()" value="Submit" class="text-primary">
+              </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.1/dist/mailtoui-min.js"></script>
+
+    <!-- Slideshow -->
+    <script>
+      function myFunction() {
+
+          var answer = document.getElementById("answer").value;
+
+          if(answer.toLowerCase() == "six hundred" || answer.toLowerCase() == "600") {
+              window.location.href = 'clue9.html';
+          }
+          else
+          {
+              window.alert("Whoops! That doesn't seem right!");
+          }
+          
+      }
+
+      document.getElementById("frm1").addEventListener("submit", (e) => {
+          e.preventDefault();
+          myFunction()
+          });
+  </script>
+  </body>
+
+</html>
